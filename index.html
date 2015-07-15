@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Punk CSS</title>
+		<style>
+			html {
+				width: 420px;
+				margin: auto;
+				padding: 10% 0;
+				font: 1em / 1.5 monaco, monospace;
+				background: #ddd;
+				color: #666;
+				text-align: center;
+			}
+			body {
+				margin: 0;
+			}
+			head, title {
+				display: block;
+			}
+			title {
+				font-size: 2em;
+				font-weight: bold;
+			}
+			h1 {
+				font-size: 1.5em;
+			}
+			a.bookmarklet {
+				display: inline-block;
+				padding: .5em 1em;
+				background: red;
+				cursor: -moz-grab;
+				cursor: -webkit-grab;
+				cursor: grab;
+				
+			}
+			a.bookmarklet::after {
+				display: block;
+				content: 'Drag me!';
+			}
+		</style>
+	</head>	
+	<body>
+		<h1>Do this with your project!</h1>
+		<p>Drag the bookmarklet to your bookmarks bar:</p>
+		<a class="bookmarklet" href="javascript:(function(a){a.head.innerHTML ='';a.body.innerHTML ='';var b=a.createElement('script');b.src='//punkcss.com/punkcss.js';a.getElementsByTagName('head')[0].appendChild(b)})(document);">Bookmarklet</a>
+		<p>Resize the window afterwards and enjoy.</p>
+		<p>NOTE: Use <kbd>r</kbd> to reload the page to prevent the script from being cleared. I'm working on fixing this.</p>
+		<footer>
+			Contribute on <a href="http://github.com/rnmp/punkcss">Github</a>.
+			<br>A project by <a href="http://rolandomurillo.com/" target="_blank">Rolando Murillo</a>.
+		</footer>
+	</body>
+</html>
