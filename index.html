@@ -4,49 +4,83 @@
 		<meta charset="utf-8">
 		<title>Punk CSS</title>
 		<style>
-			html {
-				width: 420px;
-				margin: auto;
-				padding: 10% 0;
-				font: 1em / 1.5 monaco, monospace;
-				background: #ddd;
-				color: #666;
-				text-align: center;
-			}
 			body {
-				margin: 0;
+				position: relative;
+				width: 570px;
+				margin: 7.5% auto;
+				padding:  0;
+				font: 1em / 1.5 monaco, monospace;
+				background: #ccc;
+				color: #666;
 			}
-			head, title {
-				display: block;
+			a {
+				color: #fff;
 			}
-			title {
-				font-size: 2em;
-				font-weight: bold;
+			h1, h2,a  {
+				color: #fff;
+				text-shadow: 0 .1em .1em rgba(0,0,0,0.1);
 			}
 			h1 {
+				margin-bottom: .5em;
+				font-size: 4em;
+				font-weight: bold;
+			}
+			h2 {
 				font-size: 1.5em;
+			}
+			video {
+				display: block;
+				width: 690px;
+				height: 388px;
+				margin: 0 -60px;
+			}
+			hr {
+				width: 20px;
+				margin-left: 0;
+				border: 0;
+				border-top: 1px solid #aaa;
 			}
 			a.bookmarklet {
 				display: inline-block;
 				padding: .5em 1em;
-				background: red;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-weight: bold;
+				background: #e6001b;
 				cursor: -moz-grab;
 				cursor: -webkit-grab;
 				cursor: grab;
-				
+				float: left;
+				margin-right: 20px;
+				position: relative;
+				top: -.25em;
+			}
+			a.bookmarklet:active {
+				cursor: -moz-grabbing;
+				cursor: -webkit-grabbing;
+				cursor: grabbing;
 			}
 			a.bookmarklet::after {
 				display: block;
-				content: 'Drag me!';
+				content: '— Bookmarklet';
+				font-size: .4em;
+				color: #f7aaaf;
 			}
 		</style>
 	</head>	
 	<body>
-		<h1>Do this with your project!</h1>
-		<p>Drag the bookmarklet to your bookmarks bar:</p>
-		<a class="bookmarklet" href="javascript:(function(a){a.head.innerHTML ='';a.body.innerHTML ='';var b=a.createElement('script');b.src='//punkcss.com/punkcss.js';a.getElementsByTagName('head')[0].appendChild(b)})(document);">Bookmarklet</a>
-		<p>Resize the window afterwards and enjoy.</p>
-		<p>NOTE: Use <kbd>r</kbd> to reload the page to prevent the script from being cleared. I'm working on fixing this.</p>
+		<h1>Punk CSS</h1>
+		<video src="preview.mov" controls>
+  			Your browser does not support the <code>video</code> element.
+  		</video>
+		<p>Punk CSS puts your viewport on an iframe. Allowing you to rescale your design while keeping the right proportions and functionality and giving you more room to code and debug. The example in the video is from my project Coleure using this bookmarklet. More features to come.</p>
+		<h2>Use Punk CSS in your project!</h2>
+		<div class="group">
+			<a class="bookmarklet" href="javascript:(function(a){a.head.innerHTML ='';a.body.innerHTML ='';var b=a.createElement('script');b.src='//punkcss.com/punkcss.js';a.getElementsByTagName('head')[0].appendChild(b)})(document);">Drag me!</a>
+			<p>Drag the bookmarklet to your bookmarks bar. Use it, resize the window and enjoy.</p>
+		</div>
+		<p>NOTE: Use <kbd>r</kbd> to reload the page to prevent the script from being cleared. I’ll fix this soon.</p>
+		<hr>
 		<footer>
 			Contribute on <a href="http://github.com/rnmp/punkcss">Github</a>.
 			<br>A project by <a href="http://rolandomurillo.com/" target="_blank">Rolando Murillo</a>.
