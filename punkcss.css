@@ -14,4 +14,5 @@ iframe {
 	display: block;
 	transform-origin: 0 0;
 	box-shadow: 2px 0 5px;
+	background: #fff;
 }
