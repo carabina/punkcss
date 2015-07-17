@@ -3,7 +3,7 @@
 
 var link = document.createElement('link');
 link.rel  = 'stylesheet';
-link.href = '//punkcss.com/punkcss.css';
+link.href = 'http://punkcss.com/punkcss.css';
 document.head.appendChild(link);
 
 var windowWidth = window.innerWidth;
