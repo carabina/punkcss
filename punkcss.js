@@ -3,7 +3,7 @@
 
 var link = document.createElement('link');
 link.rel  = 'stylesheet';
-link.href = '//rnmp.github.io/punkcss/punkcss.css';
+link.href = 'https://rnmp.github.io/punkcss/punkcss.css';
 document.head.appendChild(link);
 
 var windowWidth = window.innerWidth;
