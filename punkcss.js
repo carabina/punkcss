@@ -1,9 +1,9 @@
 // Call this JS from browser:
-// javascript:(function(a){a.head.innerHTML ='';a.body.innerHTML ='';var b=a.createElement('script');b.src='//punkcss.com/punkcss.js';a.getElementsByTagName('head')[0].appendChild(b)})(document);
+// javascript:(function(a){a.head.innerHTML ='';a.body.innerHTML ='';var b=a.createElement('script');b.src='https://rnmp.github.io/punkcss/punkcss.js';a.getElementsByTagName('head')[0].appendChild(b)})(document);
 
 var link = document.createElement('link');
 link.rel  = 'stylesheet';
-link.href = 'http://punkcss.com/punkcss.css';
+link.href = '//rnmp.github.io/punkcss/punkcss.css';
 document.head.appendChild(link);
 
 var windowWidth = window.innerWidth;
